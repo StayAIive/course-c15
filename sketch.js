@@ -10,7 +10,7 @@ function setup() {
 function draw() 
 {
   background(51);
-  if(ball.position.x<= 50 || ball.position.x>=width - 50)
+  if(ball.position.x<= ball.width / 2 || ball.position.x>=width - ball.width / 2)
   {
     vx= -vx;
   }
